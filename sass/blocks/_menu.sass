@@ -1,20 +1,13 @@
 .menu
-    position: relative
-    background-image: url(../img/bg.jpg)
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
-    &-wrapper
-        max-width: 1691px
-        margin: auto
+    width: 100%
     &-ul
         margin: 0
         position: relative
         display: flex
         align-items: center
         justify-content: space-between
-        padding-top: 34px
-        padding-bottom: 768px
+        padding-top: 30px
+        padding-bottom: 580px
         padding-left: 0
         list-style: none
         &__link
@@ -22,9 +15,15 @@
             font-family: Roboto
             font-style: normal
             font-weight: 500
-            font-size: 27px
-            line-height: 32px
+            font-size: 20px
+            line-height: 23px
             color: $light
+.navbar
+    position: relative
+    background-image: url(../img/bg.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
     &:before
         content: ''
         position: absolute
@@ -37,3 +36,31 @@
         background: linear-gradient(183.41deg, rgba(35, 35, 35, 0.46) 2.81%, rgba(35, 35, 35, 0) 97.07%)
 .submenu
     background-color: $text-color
+    &-wrapper
+        max-width: 1218px
+        margin: auto
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &-title
+        margin: 0
+        padding-top: 46px
+        max-width: 522px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 900
+        font-size: 39px
+        line-height: 160%
+        text-transform: uppercase
+        text-align: center
+        color: $light
+    &-discription
+        margin: 0
+        padding-bottom: 46px
+        max-width: 522px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 900
+        font-size: 22px
+        line-height: 160%
+        color: $light
