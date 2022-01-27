@@ -1,9 +1,16 @@
 .author
     background-color: $light
+    &-wrapper   
+        display: flex
+        align-items: center
+        justify-content: space-between
     &-text
         max-width: 596px
+        padding-top: 218px
+        padding-bottom: 218px
     &-name
         margin: 0
+        padding-bottom: 20px
         font-family: Roboto
         font-style: normal
         font-weight: 900
@@ -19,3 +26,17 @@
         font-size: 34px
         line-height: 140%
         color: $text-color
+    &-circle
+        position: relative
+        width: 537px
+        height: 537px
+        border-radius: 50%
+        background-color: $text-color
+    &-image
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 509px
+        height: 509px
+        border-radius: 50%
+        object-fit: cover
