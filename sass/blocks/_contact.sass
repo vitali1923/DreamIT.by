@@ -11,7 +11,7 @@
         justify-content: flex-end
     &-form
         max-width: 386px
-        padding: 23px 34px 90px 34px
+        padding: 23px 34px 0 34px
         background-color: $text-color
         border-radius: 6px
     &-title
@@ -30,15 +30,18 @@
         min-height: 90px
         padding: 20px 40px
         border-radius: 6px
+        border: none
         font-family: Roboto
         font-style: normal
         font-weight: normal
         font-size: 22px
         line-height: 26px
-        border: none
     &-button
+        min-width: 178px
+        min-height: 50px
         margin-bottom: 21px
         margin-top: 20px
+        margin-left: 70px
         padding: 15px 37px
         border-radius: 6px
         border: none
@@ -49,6 +52,7 @@
         line-height: 21px
         background-color: $black
         color: $light
+        cursor: pointer
 .input
     background-color: $light
     width: 100%
