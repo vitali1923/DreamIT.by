@@ -158,8 +158,22 @@
     .menu
         &-ul
             padding-bottom: 338px
+            display: flex
+            align-items: center
+            justify-content: flex-end
             &__item
                 display: none
+    .navbar
+        &-button
+            width: 40px
+            height: 26px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            border: none
+            cursor: pointer
+            background-color: transparent
     .submenu
         // min-height: 200px
         &-image
@@ -295,3 +309,47 @@
             width: 100px
             &__image
                 width: 100px
+@media (max-width: 876px)
+    .submenu
+        min-height: 211px
+        &-image
+            max-width: 530px
+        &-logo
+            left: 220px
+            bottom: 271px
+    .active
+        left: 204px
+        bottom: 88px
+@media (max-width: 768px)
+    .container
+        max-width: 700px
+        width: 92%
+@media (max-width: 732px)
+    .header
+        &__social-link
+            min-width: 215px
+    .submenu
+        &-title
+            max-width: 273px
+            font-size: 18px
+            margin-right: 26px
+    .programm
+        &-details
+            max-width: 336px
+        &-text
+            margin-left: 20px
+    .gallary
+        &-picture
+            margin-bottom: 7px
+@media (max-width: 576px)
+    .header
+        &-mail
+            display: none
+            &__icon
+                width: 30px
+                height: 30px
+        &-tel
+            display: none
+            &__icon
+                width: 30px
+                height: 30px
