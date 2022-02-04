@@ -104,14 +104,16 @@
     .navbar
         &-link
             font-size: 16px
-    .submenu
-        &-wrapper
-            max-width: 960px
-        &-image
-            width: 715px
-        &-logo
-            left: 304px
-            width: 148px
+    .section
+        &-inner
+            max-width: 432px
+        &-title
+            font-size: 29px
+            line-height: 120%
+        &-discription
+            font-size: 18px
+        &-photo
+            max-width: 597px
     .active
         left: 294px
         &-tag
@@ -142,10 +144,21 @@
     .footer
         &-logo
             width: 165px
+            &__image
+                margin: auto
+        &-info
+            margin: auto
         &-mail
             font-size: 14px
         &-tel
             font-size: 14px
+        &-button
+            font-size: 14px
+            margin: auto
+        &__social
+            &-link
+                min-width: 320px
+                margin: auto
 @media (max-width: 992px)
     .container, .submenu-wrapper
         max-width: 760px
@@ -177,13 +190,31 @@
             flex-direction: column
             align-items: center
             justify-content: space-around
-            border: none
-            background-color: $text-color
+            border: 1px solid $light
+            background-color: transparent
             z-index: 99
             &__line
                 width: 40px
                 height: 2px
-                background-color: $light
+                background-color: $black
+    .section
+        &-bg
+            min-height: 441px
+            &::before
+                height: 250px
+        &-wrapper
+            min-height: 206px
+        &-text
+            min-height: 206px
+        &-inner
+            max-width: 319px
+        &-title
+            font-size: 21px
+            line-height: 150%
+        &-discription
+            font-size: 14px
+        &-photo
+            max-width: 487px
     .active
         left: 243px
     .author
@@ -304,6 +335,16 @@
             width: 100px
             &__image
                 width: 100px
+        &-button
+            font-size: 10px
+            padding: 4px 11px
+        &__social
+            &-link
+                min-width: 295px
+        &__link
+            &-image
+                width: 30px
+                height: 30px
 @media (max-width: 876px)
     .submenu
         min-height: 211px
@@ -324,16 +365,7 @@
             display: none
         &__social
             &-link
-                min-width: 253px
-        // &-btn
-        //     display: flex
-        //     flex-direction: column
-        //     align-items: center
-        //     justify-content: space-between
-        //     width: 40px
-        //     height: 26px
-        //     border: none
-        //     background-color: $light
+                min-width: 233px
             &__menu
                 &-btn
                     display: flex
@@ -342,6 +374,19 @@
                 height: 2px
                 background-color: $black
                 border: none
+    .section
+        &-inner
+            max-width: 281px
+        &-text
+            min-height: 176px
+        &-wrapper
+            min-height: 176px
+        &-photo
+            max-width: 427px
+    .footer
+        &__social
+            &-link
+                min-width: 225px
 @media (max-width: 732px)
     .header
         &__social-link
@@ -375,10 +420,6 @@
                 display: flex
                 width: 30px
                 height: 30px
-    .menu
-        &-ul
-            padding-bottom: 235px
-    .header
         &-button
             padding: 0
             margin: 0
@@ -391,24 +432,26 @@
                 width: 30px
         &::before
             height: 194px
-    .submenu
-        min-height: 140px
+    .section
+        &-bg
+            min-height: 311px
+        &-photo
+            max-width: 327px
+        &-text
+            min-height: 126px
         &-wrapper
-            width: 97%
-        &-image
-            max-width: 375px
+            min-height: 126px
+        &-inner
+            max-width: 210px
         &-title
-            font-size: 18px
-            padding-top: 30px
-            margin-right: 0
+            font-size: 14px
         &-discription
             font-size: 12px
-            padding-bottom: 0
-            min-width: auto
-        &-logo
-            width: 78px
-            left: 158px
-            bottom: 200px
+    .menu
+        &-ul
+            padding-bottom: 235px
+        &-button
+            top: 100px
     .active
         left: 151px
         bottom: 42px
@@ -518,7 +561,10 @@
                 display: flex
                 width: 30px
                 height: 30px
+                margin: auto
         &-tel
+            &__icon
+                margin: auto
             &__image
                 display: flex
                 width: 30px
@@ -537,10 +583,14 @@
                 height: 20px
         &-button
             display: none
+            width: 27px
+            height: 20px
             &__logo
                 display: flex
                 width: 30px
                 height: 25px
+            &__line
+                width: 27px
         &__social
             &-link
                 min-width: 137px
@@ -550,29 +600,27 @@
     .menu
         &-ul
             padding-bottom: 32px
-    .header
         &-button
-            width: 27px
-            height: 20px
-            &__line
-                width: 27px
-    .submenu
-        min-height: 82px
-        &-image
-            max-width: 160px
+            top: 65px
+    .section
+        &-bg
+            min-height: 161px
+            &::before
+                height: 110px
+        &-photo
+            max-width: 187px
+        &-text
+            min-height: 100px
+        &-wrapper
+            min-height: 100px
+        &-inner
+            max-width: 118px
         &-title
-            font-size: 14px
-            max-width: 188px
-            padding-top: 7px
-            padding-bottom: 7px
-            line-height: 110%
+            font-size: 12px
+            text-align: start
         &-discription
-            max-width: 167px
-            line-height: 110%
-        &-logo
-            width: 40px
-            left: 65px
-            bottom: 90px
+            font-size: 10px
+            text-align: start
     .active
         left: 61px
         bottom: -15px
@@ -661,5 +709,28 @@
             min-height: 37px
     .input
         font-size: 10px
+    .footer
+        &__social
+            &-link
+                min-width: 137px
+        &__link
+            width: 20px
+            height: 20px
+            &-image
+                width: 20px
+                height: 20px
+        &-button
+            display: none
+        &-mail
+            &__icon
+                width: 20px
+                height: 20px
+        &-tel
+            &__icon
+                width: 20px
+                height: 20px
+            &__image
+                width: 20px
+                height: 20px
     .to-top
         dn
