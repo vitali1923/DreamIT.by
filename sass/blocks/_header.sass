@@ -1,7 +1,7 @@
 .header
     width: 100%
     background-color: $black
-    &-wrapper
+    &-top
         display: flex
         align-items: center
         justify-content: space-between
@@ -50,3 +50,49 @@
     &__link
         width: 40px
         height: 40px
+        &__menu
+            &-btn
+                display: none
+    &-btn
+        background-color: $light
+        border: none
+    // &-menu
+    //     list-style: none
+    //     margin: 0
+    //     padding: 31px 0
+    //     display: flex
+    //     align-items: center
+    //     justify-content: space-between
+    //     color: $black
+        &__link
+            text-decoration: none
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            color: inherit
+.navbar
+    &-menu
+        position: absolute
+        right: 0
+        left: 0
+        top: 80px
+        z-index: 99
+        // background-color: $light
+    &-button
+        padding: 30px 0
+        margin: 0
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-link
+        text-decoration: none
+        font-weight: 500
+        font-size: 20px
+        line-height: 23px
+        color: $light
+.menu
+    &-button
+        display: none

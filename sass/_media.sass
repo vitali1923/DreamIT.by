@@ -98,10 +98,12 @@
         &__social
             &-link
                 min-width: 295px
-    .menu
-        &-ul
+        &-menu
             &__link
                 font-size: 14px
+    .navbar
+        &-link
+            font-size: 16px
     .submenu
         &-wrapper
             max-width: 960px
@@ -131,7 +133,6 @@
         &-info
             &:nth-of-type(2)
                 margin-bottom: 50px
-
     sup
         font-size: 70px
     .gallary
@@ -147,48 +148,42 @@
             font-size: 14px
 @media (max-width: 992px)
     .container, .submenu-wrapper
-        max-width: 700px
+        max-width: 760px
     .header
         &-button
             font-size: 10px
             padding: 4px 11px
-        &__social
-            &-link
-                min-width: 253px
-    .menu
-        &-ul
-            padding-bottom: 338px
-            display: flex
-            align-items: center
-            justify-content: flex-end
-            &__item
-                display: none
+            margin-right: auto
+        &-mail
+            margin-right: auto
+        &-tel
+            margin-right: auto
+        &-menu
+            display: none
+        &-line
     .navbar
         &-button
-            width: 40px
-            height: 26px
+            display: none
+    .menu
+        &-button
+            position: fixed
+            right: 0
+            top: 73px
+            margin: 0
+            padding: 0
+            width: 60px
+            height: 40px
             display: flex
             flex-direction: column
             align-items: center
-            justify-content: space-between
+            justify-content: space-around
             border: none
-            cursor: pointer
-            background-color: transparent
-    .submenu
-        // min-height: 200px
-        &-image
-            width: 600px
-        &-logo
-            left: 259px
-            bottom: 325px
-            width: 120px
-        &-title
-            max-width: 321px
-            font-size: 24px
-            padding-top: 66px
-        &-discription
-            min-width: 321px
-            font-size: 14px
+            background-color: $text-color
+            z-index: 99
+            &__line
+                width: 40px
+                height: 2px
+                background-color: $light
     .active
         left: 243px
     .author
@@ -324,6 +319,29 @@
     .container
         max-width: 700px
         width: 92%
+    .header
+        &-menu
+            display: none
+        &__social
+            &-link
+                min-width: 253px
+        // &-btn
+        //     display: flex
+        //     flex-direction: column
+        //     align-items: center
+        //     justify-content: space-between
+        //     width: 40px
+        //     height: 26px
+        //     border: none
+        //     background-color: $light
+            &__menu
+                &-btn
+                    display: flex
+            &__line
+                width: 40px
+                height: 2px
+                background-color: $black
+                border: none
 @media (max-width: 732px)
     .header
         &__social-link
@@ -345,6 +363,8 @@
     .header
         &-mail
             display: none
+            &__image
+                margin-right: auto
             &__icon
                 display: flex
                 width: 30px
@@ -358,9 +378,15 @@
     .menu
         &-ul
             padding-bottom: 235px
-    .navbar
+    .header
         &-button
             padding: 0
+            margin: 0
+            display: none
+            &__logo
+                display: block
+                width: 60px
+                height: 60px
             &__line
                 width: 30px
         &::before
@@ -524,7 +550,7 @@
     .menu
         &-ul
             padding-bottom: 32px
-    .navbar
+    .header
         &-button
             width: 27px
             height: 20px
