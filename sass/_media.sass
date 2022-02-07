@@ -177,6 +177,22 @@
     .navbar
         &-button
             display: none
+            &--visible
+                position: fixed
+                left: 0
+                top: 73px
+                right: 0
+                bottom: 20px
+                display: block
+                max-width: 350px
+                margin: auto
+                // padding: 30px
+                background: rgba(59, 85, 222, 0.5)
+                text-align: center
+        &-link
+            font-size: 24px
+        &-item
+            margin-bottom: 15px
     .menu
         &-button
             position: fixed
@@ -432,6 +448,10 @@
                 width: 30px
         &::before
             height: 194px
+    .navbar
+        &-button
+            &--visible
+                top: 99px
     .section
         &-bg
             min-height: 311px
@@ -601,7 +621,11 @@
         &-ul
             padding-bottom: 32px
         &-button
-            top: 65px
+            top:
+    .navbar
+        &-button
+            &--visible
+                top: 64px
     .section
         &-bg
             min-height: 161px
@@ -733,4 +757,3 @@
                 width: 20px
                 height: 20px
     .to-top
-        dn
