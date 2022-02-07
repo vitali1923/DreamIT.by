@@ -124,7 +124,7 @@
         </div>
       </div>
       <div class="section-image">
-        <img src="img/save.png" alt="Photo" class="section-photo">
+        <img src="img/save.png" alt="Photo" class="section-photo" />
       </div>
     </section>
     <!-- /.section -->
@@ -282,7 +282,7 @@
         <div class="contact-wrapper">
           <div class="contact-form">
             <h3 class="contact-title">ЗАПИСАТЬСЯ НА КУРС</h3>
-            <form action="#" class="form">
+            <form action="send.php" method="post" class="form">
               <div class="contact__input-group">
                 <input
                   type="text"
@@ -290,6 +290,7 @@
                   placeholder="имя*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="contact__input-group">
@@ -312,9 +313,9 @@
               </div>
               <textarea
                 class="contact-massage"
-                name="massage"
                 id="#"
                 placeholder="ваше сообщение"
+                name="massage"
               ></textarea>
               <button class="contact-button">ОТПРАВИТЬ</button>
             </form>
