@@ -287,7 +287,7 @@
                 <input
                   type="text"
                   class="input"
-                  placeholder="имя*"
+                  placeholder="имя *"
                   name="name"
                   required
                   minlength="2"
@@ -297,10 +297,11 @@
                 <input
                   type="tel"
                   class="input"
-                  placeholder="+375(__)___-__-__*"
+                  id="phone"
+                  placeholder="+375(__)___-__-__ *"
                   name="phone"
                   required
-                  maxlength="13"
+                  minlength="9"
                 />
               </div>
               <div class="contact__input-group">
@@ -400,6 +401,9 @@
       </a>
     </footer>
     <!-- /.footer -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
