@@ -136,3 +136,89 @@
         &-logo
             &__image
                 width: 125px
+@media (max-width: 992px)
+    .container
+        max-width: 760px
+        width: 92%
+    .header
+        &-mail
+            font-size: 14px
+        &-tel
+            font-size: 14px
+        &-button
+            font-size: 14px
+            padding: 7px 14px
+        &__social
+            &-link
+                min-width: 200px
+    .navbar
+        &-button
+            display: none
+            &--visible
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                bottom: 0
+                display: block
+                max-width: 350px
+                max-height: 300px
+                margin: auto
+                padding: 30px
+                background: rgba(59, 85, 222, 0.5)
+                text-align: center
+    .menu
+        &-button
+            position: fixed
+            right: 0
+            top: 79px
+            margin: 0
+            padding: 0
+            width: 60px
+            height: 40px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            border: 1px solid $light
+            background-color: transparent
+            z-index: 99
+            &__line
+                width: 40px
+                height: 2px
+                background-color: $black
+    .section
+        &-inner
+            max-width: 323px
+        &-title
+            font-size: 20px
+            text-align: left
+        &-discription
+            font-size: 14px
+    .programm
+        &-details
+            max-width: 341px
+    .gallary
+        &-picture
+            max-width: 375px
+            margin-bottom: 10px
+    .footer
+        &-mail
+            font-size: 14px
+        &-tel
+            font-size: 14px
+        &-button
+            font-size: 14px
+            padding: 7px 14px
+        &__social
+            &-link
+                min-width: 200px
+@media (max-width: 768px)
+    .section
+        &-inner
+            max-width: 273px
+        &-title
+            text-align: center
+    .gallary
+        &-picture
+            max-width: 348px
