@@ -141,6 +141,9 @@
         max-width: 760px
         width: 92%
     .header
+        position: fixed
+        top: 0
+        z-index: 99
         &-mail
             font-size: 14px
         &-tel
@@ -155,18 +158,17 @@
         &-button
             display: none
             &--visible
+                display: block
                 position: fixed
                 left: 0
-                top: 0
+                top: 78px
                 right: 0
                 bottom: 0
-                display: block
-                max-width: 350px
-                max-height: 300px
-                margin: auto
-                padding: 30px
-                background: rgba(59, 85, 222, 0.5)
+                padding-top: 80px
+                background: rgba(59, 85, 222, 0.7)
                 text-align: center
+        &-item
+            margin-bottom: 10px
     .menu
         &-button
             position: fixed
@@ -226,6 +228,10 @@
                 height: 30px
                 margin-left: auto
                 margin-right: auto
+    .navbar
+        &-button
+            &--visible
+                top: 72px
     .section
         &-bg
             min-height: 231px
@@ -274,8 +280,189 @@
     .gallary
         &-picture
             max-width: 283px
-    .footer 
+    .footer
         &-button
             display: none
         &-info
             margin-right: auto
+@media (max-width: 576px)
+    .container
+        max-width: 576px
+        width: 92%
+    .header
+        &-mail
+            display: none
+            &__icon
+                display: block
+                width: 30px
+                height: 30px
+        &-tel
+            display: none
+            &__icon
+                display: block
+                width: 30px
+                height: 30px
+                margin-left: auto
+    .navbar
+        &-button
+            &--visible
+                top: 70px
+    .section
+        &-inner
+            max-width: 188px
+        &-title
+            font-size: 14px
+        &-discription
+            font-size: 10px
+    .author
+        &-name
+            font-size: 22px
+        &-discription
+            font-size: 12px
+        &-avatar
+            width: 250px
+            height: 250px
+        &-image
+            width: 240px
+            height: 240px
+    .gallary
+        &-picture
+            max-width: 260px
+    .about
+        &-wrapper
+            flex-wrap: wrap
+            margin: auto
+        &-image
+            width: 160px
+            margin: auto
+        &-title
+            font-size: 22px
+        &-discription
+            font-size: 12px
+            max-width: 260px
+            line-height: 17px
+            &:nth-of-type(2)
+                margin-top: 5px
+                margin-bottom: 5px
+    .price
+        &-title
+            font-size: 22px
+        &-line
+            height: 3px
+        &-package
+            padding-top: 30px
+        &-number
+            font-size: 50px
+            min-width: 135px
+            margin-right: auto
+            margin-left: auto
+        &-text
+            margin-left: 5px
+        &-info
+            height: 130px
+            &__title
+                font-size: 22px
+            &__discription
+                font-size: 18px
+                line-height: 21px
+    sup
+        font-size: 30px
+    .contact
+        &-title
+            font-size: 14px
+            padding-bottom: 0
+        &-form
+            max-width: 316px
+            padding: 10px 10px 0 10px
+        &-massage
+            min-height: 70px
+            padding: 10px 20px
+            margin-top: 10px
+            font-size: 14px
+        &-button
+            font-size: 14px
+    .input
+        height: 40px
+        padding: 0 20px
+        margin-top: 10px
+        font-size: 14px
+    .footer
+        &-logo
+            display: none
+        &-info
+            display: none
+        &-mail
+            &__icon
+                display: block
+                width: 30px
+                height: 30px
+        &-tel
+            &__icon
+                display: block
+                width: 30px
+                height: 30px
+            &__image
+                display: block
+        &-button
+            &__logo
+                display: block
+                width: 30px
+                height: 30px
+@media (max-width: 460px)
+    .section
+        &-photo
+            max-width: 177px
+        &-bg
+            min-height: 130px
+            &::before
+                max-height: 80px
+        &-text
+            min-height: 80px
+        &-wrapper
+            min-height: 80px
+    .gallary
+        &-picture
+            max-width: 206px
+@media (max-width: 368px)
+    .section
+        &-inner
+            max-width: 148px
+    .gallary
+        &-picture
+            max-width: 164px
+@media (max-width: 320px)
+    .container
+        max-width: 92%
+    .header
+        &-mail
+            &__icon
+                width: 20px
+                height: 20px
+        &-tel
+            &__icon
+                width: 20px
+                height: 20px
+        &__social
+            &-link
+                min-width: 130px
+        &__link
+            width: 20px
+            height: 20px
+    .gallary
+        &-picture
+            max-width: 100%
+    .footer
+        &-mail
+            &__icon
+                width: 20px
+                height: 20px
+        &-tel
+            &__icon
+                width: 20px
+                height: 20px
+        &__social
+            &-link
+                min-width: 130px
+        &__link
+            width: 20px
+            height: 20px
