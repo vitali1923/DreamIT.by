@@ -22,7 +22,7 @@ $result=mysqli_query($connection, "INSERT INTO `orders`(`user_name`, `user_phone
 
 $mess="Заявка:".$post_ima.", ".$post_myemail.", ".$post_phone;
 
-mail("vitalimelnik@yandex.ru","Заявка",$mess,"From: vitalimelnik@yandex.ru \r\n"."X-Mailer: PHP/" . phpversion());
+mail("ooomevir@gmail.com","Заявка",$mess,"From: ooomevir@gmail.com \r\n"."X-Mailer: PHP/" . phpversion());
 
 
 
