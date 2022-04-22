@@ -1,4 +1,20 @@
 <?php
+session_start();
+
+$connection = mysqli_connect( 'localhost', 'balkonsb_mfadmin', 'mf_admin_123', 'balkonsb_mfdreamit' );
+
+$var1=$_POST["name"];
+$var2=$_POST["phone"];
+$var3=$_POST["email"];
+$var4=$_POST["massage"];
+
+
+mysqli_query($connection, "set names utf8"); 
+
+$sql="INSERT INTO `orders`( `user_name`, `user_phone`, `user_email`, `user_coment`) VALUES ($var1,$var2,$var3,$var4)";
+
+mysqli_query($connection, $sql);
+
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';

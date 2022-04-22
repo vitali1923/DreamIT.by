@@ -4,7 +4,7 @@ session_start();
 
 $connection = mysqli_connect( 'localhost', 'balkonsb_mfadmin', 'mf_admin_123', 'balkonsb_mfdreamit' );
 
-mysqli_query($connection, "set names utf8");
+mysqli_query($connection, "set names utf8"); 
 
 ?>
 
